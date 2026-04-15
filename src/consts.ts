@@ -2,7 +2,7 @@ export const SITE_TITLE = '小航缓慢着陆';
 export const SITE_DESCRIPTION =
 	'杭州电子科技大学计算机研究生小航的个人主页，用来记录随笔、总结、生活观察和阶段性思考。';
 export const SITE_AUTHOR = '小航';
-export const SITE_EMAIL = 'yourname@example.com';
+export const SITE_EMAIL = '2221648485@qq.com';
 export const GITHUB_USERNAME = '2221648485';
 export const GITHUB_URL = `https://github.com/${GITHUB_USERNAME}`;
 
