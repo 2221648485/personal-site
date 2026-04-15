@@ -29,7 +29,7 @@ const posts = (await getCollection('blog'))
 		<main>
 			<section class="hero">
 				<div class="hero-copy">
-					<p class="hero-label">中文静态博客</p>
+					<p class="hero-label">中文个人主页 / 静态博客</p>
 					<h1>{HOME_INTRO.title}</h1>
 					<p class="hero-text">{HOME_INTRO.description}</p>
 					<div class="hero-actions">
@@ -41,7 +41,7 @@ const posts = (await getCollection('blog'))
 					<p class="card-kicker">关于站点</p>
 					<h2>{SITE_AUTHOR}</h2>
 					<p>
-						以个人主页为主体，博客不是独立挂件，而是这个站点的一部分。页面会优先承载你的表达，再慢慢补齐项目、经历和归档。
+						这是一个围绕“小航”展开的长期空间。它不会被做成很标准的简历站，而是更接近一块持续更新的私人角落，慢慢放进研究、生活、写作和偶尔想认真记录的内容。
 					</p>
 					<ul>
 						{PROFILE_FACTS.map((fact) => <li>{fact}</li>)}
@@ -72,10 +72,10 @@ const posts = (await getCollection('blog'))
 			<section class="notes-panel">
 				<div>
 					<p class="section-label dark">Positioning</p>
-					<h2>这会是一种更松弛的记录方式。</h2>
+					<h2>研究生阶段，也可以有一块自己的缓冲地带。</h2>
 				</div>
 				<p>
-					不把它做成简历站，也不做成纯技术文档站。它更像一块长期更新的个人空间，用来放阶段总结、生活观察、科研过程中的碎片化思考，以及偶尔值得沉淀下来的技术内容。
+					不把它做成纯项目展示页，也不把它做成冷冰冰的知识库。这里更像一个会慢慢长大的数字花园，用来放随笔、阶段总结、科研过程中的碎片思考，以及日常生活里那些值得留下来的小部分。
 				</p>
 			</section>
 		</main>
