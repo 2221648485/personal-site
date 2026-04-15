@@ -11,46 +11,60 @@ type Props = CollectionEntry<'blog'>['data'];
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="zh-CN">
 	<head>
 		<BaseHead title={title} description={description} />
 		<style>
 			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
-				margin: 0;
+				width: min(1120px, calc(100% - 2rem));
+				max-width: 1120px;
+				margin: 0 auto;
+				padding-top: 1rem;
 			}
 			.hero-image {
 				width: 100%;
 			}
 			.hero-image img {
 				display: block;
-				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
+				margin: 0 auto 1rem;
+				border-radius: 30px;
 			}
 			.prose {
-				width: 720px;
-				max-width: calc(100% - 2em);
-				margin: auto;
-				padding: 1em;
-				color: rgb(var(--gray-dark));
+				width: min(760px, calc(100% - 2rem));
+				margin: 0 auto;
+				padding: 2rem;
+				border: 1px solid rgba(var(--border), 0.85);
+				border-radius: 30px;
+				background: rgba(var(--panel), 0.78);
+				box-shadow: var(--shadow);
 			}
 			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
-				text-align: center;
-				line-height: 1;
+				margin-bottom: 1.2rem;
+				padding-bottom: 1.2rem;
+				border-bottom: 1px solid rgba(var(--border), 0.9);
 			}
 			.title h1 {
-				margin: 0 0 0.5em 0;
+				margin: 0 0 0.6rem 0;
 			}
 			.date {
-				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
+				margin-bottom: 0.8rem;
+				color: rgb(var(--muted));
+				font-size: 0.95rem;
 			}
 			.last-updated-on {
-				font-style: italic;
+				margin-top: 0.25rem;
+			}
+			.prose :global(h2) {
+				margin-top: 2.2rem;
+			}
+			.prose :global(p),
+			.prose :global(li) {
+				color: rgb(var(--ink));
+			}
+			@media (max-width: 720px) {
+				.prose {
+					padding: 1.3rem;
+				}
 			}
 		</style>
 	</head>
@@ -69,13 +83,12 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 							{
 								updatedDate && (
 									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
+										最后更新于 <FormattedDate date={updatedDate} />
 									</div>
 								)
 							}
 						</div>
 						<h1>{title}</h1>
-						<hr />
 					</div>
 					<slot />
 				</div>
