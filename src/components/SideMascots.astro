@@ -12,8 +12,14 @@ const base = import.meta.env.BASE_URL.endsWith('/')
 		loading="lazy"
 	/>
 	<img
-		class="mascot mascot-right"
+		class="mascot mascot-right-top"
 		src={`${base}characters/frieren-1.png`}
+		alt=""
+		loading="lazy"
+	/>
+	<img
+		class="mascot mascot-right-bottom"
+		src={`${base}characters/frieren-2.png`}
 		alt=""
 		loading="lazy"
 	/>
@@ -31,7 +37,6 @@ const base = import.meta.env.BASE_URL.endsWith('/')
 
 		.mascot {
 			position: fixed;
-			top: 118px;
 			width: clamp(140px, 14vw, 220px);
 			max-height: calc(100vh - 160px);
 			height: auto;
@@ -49,20 +54,42 @@ const base = import.meta.env.BASE_URL.endsWith('/')
 		}
 
 		.mascot-left {
+			top: 118px;
 			left: clamp(8px, calc((100vw - 1120px) / 2 - 170px), 72px);
 			transform: rotate(-3deg);
 		}
 
-		.mascot-right {
+		.mascot-right-top {
+			top: 96px;
 			right: clamp(8px, calc((100vw - 1120px) / 2 - 170px), 72px);
+			width: clamp(120px, 12vw, 180px);
 			transform: rotate(3deg);
+		}
+
+		.mascot-right-bottom {
+			right: clamp(12px, calc((100vw - 1120px) / 2 - 160px), 88px);
+			bottom: 36px;
+			width: clamp(150px, 15vw, 220px);
+			transform: rotate(-2deg);
 		}
 	}
 
 	@media (min-width: 1280px) and (max-width: 1439px) {
 		.mascot {
-			width: 150px;
 			opacity: 0.82;
+		}
+
+		.mascot-left {
+			width: 150px;
+		}
+
+		.mascot-right-top {
+			width: 118px;
+		}
+
+		.mascot-right-bottom {
+			width: 150px;
+			bottom: 18px;
 		}
 	}
 </style>
