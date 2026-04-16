@@ -1,17 +1,21 @@
+---
+const base = import.meta.env.BASE_URL.endsWith('/')
+	? import.meta.env.BASE_URL
+	: `${import.meta.env.BASE_URL}/`;
+---
+
 <aside class="side-mascots" aria-hidden="true">
 	<img
 		class="mascot mascot-left"
-		src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Anime%20Boston%202023%20Hitori%20%22Bocchi%22%20Got%C5%8D%20cosplay%2004-08-2023%20245PM.jpg"
+		src={`${base}characters/bocchi.png`}
 		alt=""
 		loading="lazy"
-		referrerpolicy="no-referrer"
 	/>
 	<img
 		class="mascot mascot-right"
-		src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Moyasi%20as%20Frieren%20standing%20at%20Maji%20Square%2C%20front%20view%2020240824a.jpg"
+		src={`${base}characters/frieren-1.png`}
 		alt=""
 		loading="lazy"
-		referrerpolicy="no-referrer"
 	/>
 </aside>
 
