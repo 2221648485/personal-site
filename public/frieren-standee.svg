@@ -1,0 +1,41 @@
+<svg width="360" height="900" viewBox="0 0 360 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="frierenCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F6FAFF"/>
+      <stop offset="100%" stop-color="#EEF0FF"/>
+    </linearGradient>
+    <linearGradient id="frierenHair" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F6F7FF"/>
+      <stop offset="100%" stop-color="#D9DEF5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#A9B4E6" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <rect x="40" y="24" width="280" height="852" rx="36" fill="url(#frierenCard)"/>
+    <rect x="58" y="42" width="244" height="816" rx="28" fill="#FFFFFF" fill-opacity="0.8" stroke="#D6DCF3"/>
+  </g>
+  <circle cx="180" cy="188" r="78" fill="#FFE7D6"/>
+  <path d="M105 185C105 124 141 90 180 90C219 90 255 124 255 185V236H105V185Z" fill="url(#frierenHair)"/>
+  <path d="M131 110L116 136L134 154L154 128L131 110Z" fill="#E6E9FA"/>
+  <path d="M230 110L245 136L227 154L207 128L230 110Z" fill="#E6E9FA"/>
+  <circle cx="150" cy="191" r="8" fill="#3A425F"/>
+  <circle cx="210" cy="191" r="8" fill="#3A425F"/>
+  <path d="M171 218C176 221 184 221 189 218" stroke="#A7AFCF" stroke-width="5" stroke-linecap="round"/>
+  <rect x="120" y="274" width="120" height="80" rx="28" fill="#D8E0FF"/>
+  <path d="M106 324C106 293 131 268 162 268H198C229 268 254 293 254 324V544H106V324Z" fill="#F7FAFF"/>
+  <path d="M118 356C133 336 157 322 180 322C203 322 227 336 242 356V544H118V356Z" fill="#B8C3FF"/>
+  <rect x="136" y="536" width="30" height="132" rx="15" fill="#F6F7FB"/>
+  <rect x="194" y="536" width="30" height="132" rx="15" fill="#F6F7FB"/>
+  <rect x="126" y="648" width="46" height="20" rx="10" fill="#C4CCE8"/>
+  <rect x="186" y="648" width="46" height="20" rx="10" fill="#C4CCE8"/>
+  <path d="M106 360C76 398 75 490 102 532L126 504C111 479 112 434 131 402L106 360Z" fill="#F8FAFF"/>
+  <path d="M254 360C284 398 285 490 258 532L234 504C249 479 248 434 229 402L254 360Z" fill="#F8FAFF"/>
+  <rect x="247" y="316" width="12" height="288" rx="6" fill="#7F5A2B"/>
+  <path d="M253 305C228 324 218 358 226 390C244 388 270 372 284 350C274 330 265 316 253 305Z" fill="#86D7E9" stroke="#4B7F8F" stroke-width="4"/>
+  <circle cx="252" cy="314" r="11" fill="#F4D888" stroke="#7F5A2B" stroke-width="4"/>
+  <rect x="86" y="706" width="188" height="84" rx="22" fill="#F7F9FF" stroke="#D6DCF3"/>
+  <text x="180" y="744" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#35415C">葬送的芙莉莲</text>
+  <text x="180" y="778" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#6D7791">白发法师安静路过</text>
+</svg>

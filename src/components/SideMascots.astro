@@ -1,0 +1,49 @@
+---
+const base = import.meta.env.BASE_URL;
+---
+
+<aside class="side-mascots" aria-hidden="true">
+	<img class="mascot mascot-left" src={`${base}bocchi-standee.svg`} alt="" loading="lazy" />
+	<img class="mascot mascot-right" src={`${base}frieren-standee.svg`} alt="" loading="lazy" />
+</aside>
+
+<style>
+	.side-mascots {
+		display: none;
+	}
+
+	@media (min-width: 1480px) {
+		.side-mascots {
+			display: block;
+		}
+
+		.mascot {
+			position: fixed;
+			top: 132px;
+			width: min(17vw, 250px);
+			max-height: calc(100vh - 160px);
+			object-fit: contain;
+			pointer-events: none;
+			user-select: none;
+			opacity: 0.96;
+			z-index: 2;
+			filter: drop-shadow(0 18px 28px rgba(30, 34, 45, 0.14));
+		}
+
+		.mascot-left {
+			left: max(12px, calc((100vw - 1120px) / 2 - 250px));
+			transform: rotate(-3deg);
+		}
+
+		.mascot-right {
+			right: max(12px, calc((100vw - 1120px) / 2 - 250px));
+			transform: rotate(3deg);
+		}
+	}
+
+	@media (min-width: 1480px) and (max-width: 1640px) {
+		.mascot {
+			width: min(15vw, 210px);
+		}
+	}
+</style>

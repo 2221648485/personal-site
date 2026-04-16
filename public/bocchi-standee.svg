@@ -1,0 +1,45 @@
+<svg width="360" height="900" viewBox="0 0 360 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bocchiCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFF7FB"/>
+      <stop offset="100%" stop-color="#FFE8F2"/>
+    </linearGradient>
+    <linearGradient id="bocchiHair" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F7B2D3"/>
+      <stop offset="100%" stop-color="#E889B9"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#D99BBC" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <rect x="40" y="24" width="280" height="852" rx="36" fill="url(#bocchiCard)"/>
+    <rect x="58" y="42" width="244" height="816" rx="28" fill="#FFFFFF" fill-opacity="0.76" stroke="#F2C9D9"/>
+  </g>
+  <circle cx="182" cy="195" r="78" fill="#FFE7D6"/>
+  <path d="M104 188C104 128 140 90 182 90C224 90 260 128 260 188V219H104V188Z" fill="url(#bocchiHair)"/>
+  <path d="M113 165C82 178 77 217 88 246C99 276 125 298 148 298L145 262C134 252 126 235 124 217C122 196 127 178 136 168L113 165Z" fill="#F0A4C7"/>
+  <path d="M251 165C282 178 287 217 276 246C265 276 239 298 216 298L219 262C230 252 238 235 240 217C242 196 237 178 228 168L251 165Z" fill="#F0A4C7"/>
+  <circle cx="152" cy="194" r="9" fill="#2B2A36"/>
+  <circle cx="212" cy="194" r="9" fill="#2B2A36"/>
+  <path d="M172 218C177 221 187 221 192 218" stroke="#D481A6" stroke-width="6" stroke-linecap="round"/>
+  <rect x="128" y="274" width="108" height="138" rx="40" fill="#F1EEF8"/>
+  <rect x="110" y="316" width="144" height="214" rx="54" fill="#FFD54F"/>
+  <rect x="118" y="350" width="126" height="155" rx="20" fill="#F4F0FF"/>
+  <path d="M116 378C154 398 210 398 248 378" stroke="#2F69FF" stroke-width="10" stroke-linecap="round"/>
+  <rect x="136" y="530" width="32" height="132" rx="16" fill="#292C33"/>
+  <rect x="196" y="530" width="32" height="132" rx="16" fill="#292C33"/>
+  <rect x="126" y="648" width="48" height="22" rx="11" fill="#D8DCE5"/>
+  <rect x="190" y="648" width="48" height="22" rx="11" fill="#D8DCE5"/>
+  <path d="M104 418C72 452 74 520 110 549L126 523C103 500 101 466 123 442L104 418Z" fill="#F1EEF8"/>
+  <path d="M258 418C290 452 288 520 252 549L236 523C259 500 261 466 239 442L258 418Z" fill="#F1EEF8"/>
+  <path d="M77 460C77 429 101 404 132 404H225C259 404 286 431 286 465C286 495 266 520 237 525L146 542C103 550 77 519 77 476V460Z" fill="#F3C26B" stroke="#7D5D34" stroke-width="6"/>
+  <circle cx="145" cy="470" r="13" fill="#6C5136"/>
+  <circle cx="213" cy="470" r="13" fill="#6C5136"/>
+  <path d="M160 488H197" stroke="#6C5136" stroke-width="8" stroke-linecap="round"/>
+  <path d="M103 566L252 540" stroke="#7D5D34" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="224" cy="546" r="16" fill="#FFF5C8" stroke="#7D5D34" stroke-width="6"/>
+  <rect x="86" y="706" width="188" height="84" rx="22" fill="#FFF4FA" stroke="#F2C9D9"/>
+  <text x="180" y="744" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#3A3342">孤独摇滚</text>
+  <text x="180" y="778" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#8B7180">粉发吉他手待机中</text>
+</svg>
