@@ -1,10 +1,18 @@
----
-const base = import.meta.env.BASE_URL;
----
-
 <aside class="side-mascots" aria-hidden="true">
-	<img class="mascot mascot-left" src={`${base}bocchi-standee.svg`} alt="" loading="lazy" />
-	<img class="mascot mascot-right" src={`${base}frieren-standee.svg`} alt="" loading="lazy" />
+	<img
+		class="mascot mascot-left"
+		src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Anime%20Boston%202023%20Hitori%20%22Bocchi%22%20Got%C5%8D%20cosplay%2004-08-2023%20245PM.jpg"
+		alt=""
+		loading="lazy"
+		referrerpolicy="no-referrer"
+	/>
+	<img
+		class="mascot mascot-right"
+		src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Moyasi%20as%20Frieren%20standing%20at%20Maji%20Square%2C%20front%20view%2020240824a.jpg"
+		alt=""
+		loading="lazy"
+		referrerpolicy="no-referrer"
+	/>
 </aside>
 
 <style>
@@ -22,12 +30,18 @@ const base = import.meta.env.BASE_URL;
 			top: 118px;
 			width: clamp(140px, 14vw, 220px);
 			max-height: calc(100vh - 160px);
-			object-fit: contain;
+			height: auto;
+			object-fit: cover;
+			object-position: center top;
+			border-radius: 28px;
 			pointer-events: none;
 			user-select: none;
-			opacity: 0.9;
+			opacity: 0.88;
 			z-index: 2;
-			filter: drop-shadow(0 18px 28px rgba(30, 34, 45, 0.14));
+			border: 1px solid rgba(255, 255, 255, 0.7);
+			box-shadow:
+				0 22px 42px rgba(23, 28, 38, 0.16),
+				0 0 0 10px rgba(255, 255, 255, 0.32);
 		}
 
 		.mascot-left {
