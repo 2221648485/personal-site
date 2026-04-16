@@ -12,38 +12,39 @@ const base = import.meta.env.BASE_URL;
 		display: none;
 	}
 
-	@media (min-width: 1480px) {
+	@media (min-width: 1280px) {
 		.side-mascots {
 			display: block;
 		}
 
 		.mascot {
 			position: fixed;
-			top: 132px;
-			width: min(17vw, 250px);
+			top: 118px;
+			width: clamp(140px, 14vw, 220px);
 			max-height: calc(100vh - 160px);
 			object-fit: contain;
 			pointer-events: none;
 			user-select: none;
-			opacity: 0.96;
+			opacity: 0.9;
 			z-index: 2;
 			filter: drop-shadow(0 18px 28px rgba(30, 34, 45, 0.14));
 		}
 
 		.mascot-left {
-			left: max(12px, calc((100vw - 1120px) / 2 - 250px));
+			left: clamp(8px, calc((100vw - 1120px) / 2 - 170px), 72px);
 			transform: rotate(-3deg);
 		}
 
 		.mascot-right {
-			right: max(12px, calc((100vw - 1120px) / 2 - 250px));
+			right: clamp(8px, calc((100vw - 1120px) / 2 - 170px), 72px);
 			transform: rotate(3deg);
 		}
 	}
 
-	@media (min-width: 1480px) and (max-width: 1640px) {
+	@media (min-width: 1280px) and (max-width: 1439px) {
 		.mascot {
-			width: min(15vw, 210px);
+			width: 150px;
+			opacity: 0.82;
 		}
 	}
 </style>
